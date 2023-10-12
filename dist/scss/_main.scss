@@ -1,0 +1,127 @@
+.slide-intro {
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 1.2857rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lightblue;
+  }
+  .swiper-slide__txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    strong {
+      color: $w;
+      font-size: 35px;
+    }
+    p {
+      color: $w;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    a {
+      display: inline-block;
+      height: 2.1429rem;
+      margin-top: 1.4286rem;
+      padding: 0 0.7143rem;
+      color: $w;
+      font-size: 11.9994px;
+      border: 0.0714rem solid rgba($w, 0.5);
+      border-radius: 1.7857rem;
+      line-height: 2.1429rem;
+    }
+  }
+}
+.lst-event {
+  li {
+    margin-bottom: 50px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    &::before {
+    }
+  }
+  p {
+    font-size: 1.1429rem;
+    text-align: center;
+    // width: 70%;
+    // margin: 0 auto;
+  }
+}
+.lst-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    width: calc(50% - $spacingList / 2);
+    margin-bottom: $spacingList;
+    .thumb-shopping {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 0.2857rem;
+      &::before {
+        content: "";
+        display: block;
+        height: 0;
+        padding-top: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        border: 0.0714rem solid rgba($b, 0.06);
+        background-color: rgba($b, 0.03);
+      }
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 50%;
+      // 트렌지션은 hover에다 X
+      transition: transform 3s;
+    }
+  }
+  a {
+    &:hover {
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .txt-shopping {
+    margin-top: 0.7143rem;
+    .txt-shopping__tit {
+      display: block;
+      margin-bottom: 0.7143rem;
+      font-size: 1rem;
+      color: $titDefult;
+    }
+    .txt-shopping__desc {
+      font-size: 0.8571rem;
+    }
+  }
+}
+.b {
+}
