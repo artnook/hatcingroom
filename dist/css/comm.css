@@ -474,7 +474,7 @@ footer {
   height: 100%;
   align-items: center;
   background-color: white;
-  font-size: 14vw;
+  font-size: 12vw;
 }
 #main .header .intro p {
   display: flex;
@@ -484,7 +484,7 @@ footer {
   font-size: 3vw;
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 47%;
   font-weight: 300;
 }
 #main .trigger-wrapper {
