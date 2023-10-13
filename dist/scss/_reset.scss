@@ -92,6 +92,8 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
