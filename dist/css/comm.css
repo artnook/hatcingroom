@@ -490,17 +490,28 @@ footer {
   text-transform: uppercase;
   margin: 0;
 }
-#main .section:nth-child(3) {
+#main .gps {
   background: #000;
   position: relative;
 }
-#main .section:nth-child(3) h1 {
+#main .gps h1 {
+  font-size: 4.5vw;
+  -webkit-text-stroke: 1px white;
+  color: rgba(0, 0, 0, 0);
+}
+#main .gps h2 {
   font-size: 6.5vw;
   -webkit-text-stroke: 1px white;
   color: rgba(0, 0, 0, 0);
 }
-#main .section:nth-child(4) {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 78%, #000 100%);
+#main .sell {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(0deg, #000 0%, #fff 80%);
+}
+#main .sell h1 {
+  margin-top: -35%;
 }
 #main .marquee,
 #main .marquee-2 {
@@ -523,10 +534,11 @@ footer {
   line-height: 1;
   width: 100%;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 78%, #000 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000 100%);
 }
 #main .marquee-2 {
-  min-height: 300vh;
+  min-height: 250vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 76%, #000 100%);
 }
 #main .marquee-2 h1 {
   -webkit-text-stroke: 1px #000;
@@ -537,6 +549,9 @@ footer {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+#main .smooth-scroll {
+  background-color: #000;
 }
 #main .smooth-scroll-pause {
   min-height: 75vh;
@@ -562,8 +577,19 @@ footer {
 #main .callout-col {
   flex: 1;
 }
+#main .callout-col h3 {
+  color: #d8d8d8;
+}
+#main .callout-col p {
+  color: #d8d8d8;
+  font-size: 2vw;
+  text-align: center;
+}
 #main .callout-col:last-child {
   padding-left: 30px;
+}
+#main .startshop {
+  background: linear-gradient(-180deg, #000 50%, #fff 100%);
 }
 #main .horizontal-scroll {
   display: flex;
