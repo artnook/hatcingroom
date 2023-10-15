@@ -508,10 +508,12 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(0deg, #000 0%, #fff 80%);
+  background: linear-gradient(0deg, #000 0%, #d8d8d8 80%);
 }
 #main .sell h1 {
   margin-top: -35%;
+  -webkit-text-stroke: 1px #000;
+  color: rgba(0, 0, 0, 0);
 }
 #main .marquee,
 #main .marquee-2 {
@@ -538,17 +540,54 @@ footer {
 }
 #main .marquee-2 {
   min-height: 250vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 76%, #000 100%);
+  background: linear-gradient(0deg, #d8d8d8 76%, #000 100%);
 }
 #main .marquee-2 h1 {
   -webkit-text-stroke: 1px #000;
   color: rgba(0, 0, 0, 0);
+  z-index: 1;
 }
 #main .marquee-track,
 #main .marquee-track-2 {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+#main .marquee-track-2:nth-child(1) img {
+  position: absolute;
+  display: block;
+  width: 15%;
+  background-color: transparent;
+  left: 74%;
+}
+#main .marquee-track-2:nth-child(2) img {
+  position: absolute;
+  display: block;
+  width: 15%;
+  background-color: transparent;
+  bottom: -60%;
+}
+#main .marquee-track-2:nth-child(3) img {
+  position: absolute;
+  display: block;
+  width: 15%;
+  background-color: transparent;
+  top: -6%;
+  left: 57%;
+}
+#main .marquee-track-2:nth-child(4) img {
+  position: absolute;
+  display: block;
+  width: 15%;
+  background-color: transparent;
+  left: 10%;
+}
+#main .marquee-track-2:nth-child(5) img {
+  position: absolute;
+  display: block;
+  width: 20%;
+  background-color: transparent;
+  right: 60%;
 }
 #main .smooth-scroll {
   background-color: #000;
@@ -588,8 +627,16 @@ footer {
 #main .callout-col:last-child {
   padding-left: 30px;
 }
+#main .callout-col img {
+  display: block;
+  width: 80%;
+}
 #main .startshop {
   background: linear-gradient(-180deg, #000 50%, #fff 100%);
+}
+#main .startshop h1 {
+  text-align: center;
+  font-size: 8vw;
 }
 #main .horizontal-scroll {
   display: flex;

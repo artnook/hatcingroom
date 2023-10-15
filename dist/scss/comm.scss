@@ -107,9 +107,11 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(0deg, #000 0%, #fff 80%);
+    background: linear-gradient(0deg, #000 0%, #d8d8d8 80%);
     h1 {
       margin-top: -35%;
+      -webkit-text-stroke: 1px #000;
+      color: rgba(0, 0, 0, 0);
     }
   }
   .marquee,
@@ -135,10 +137,11 @@ footer {
 
   .marquee-2 {
     min-height: 250vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 76%, #000 100%);
+    background: linear-gradient(0deg, #d8d8d8 76%, #000 100%);
     h1 {
       -webkit-text-stroke: 1px #000;
       color: rgba(0, 0, 0, 0);
+      z-index: 1;
     }
   }
 
@@ -148,7 +151,54 @@ footer {
     display: flex;
     justify-content: center;
   }
-
+  .marquee-track-2 {
+    &:nth-child(1) {
+      img {
+        position: absolute;
+        display: block;
+        width: 15%;
+        background-color: transparent;
+        left: 74%;
+      }
+    }
+    &:nth-child(2) {
+      img {
+        position: absolute;
+        display: block;
+        width: 15%;
+        background-color: transparent;
+        bottom: -60%;
+      }
+    }
+    &:nth-child(3) {
+      img {
+        position: absolute;
+        display: block;
+        width: 15%;
+        background-color: transparent;
+        top: -6%;
+        left: 57%;
+      }
+    }
+    &:nth-child(4) {
+      img {
+        position: absolute;
+        display: block;
+        width: 15%;
+        background-color: transparent;
+        left: 10%;
+      }
+    }
+    &:nth-child(5) {
+      img {
+        position: absolute;
+        display: block;
+        width: 20%;
+        background-color: transparent;
+        right: 60%;
+      }
+    }
+  }
   .smooth-scroll {
     background-color: #000;
   }
@@ -192,9 +242,17 @@ footer {
     &:last-child {
       padding-left: 30px;
     }
+    img {
+      display: block;
+      width: 80%;
+    }
   }
   .startshop {
     background: linear-gradient(-180deg, #000 50%, #fff 100%);
+    h1 {
+      text-align: center;
+      font-size: 8vw;
+    }
   }
 
   // Demo 4
