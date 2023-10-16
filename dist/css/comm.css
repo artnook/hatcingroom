@@ -416,7 +416,6 @@ h2 {
 img {
   width: 100%;
   height: auto;
-  background: #f0f0f0;
 }
 
 ul {
@@ -632,11 +631,15 @@ footer {
   width: 80%;
 }
 #main .startshop {
-  background: linear-gradient(-180deg, #000 50%, #fff 100%);
+  background: linear-gradient(-180deg, #000 3%, #ebecee 43%);
 }
 #main .startshop h1 {
   text-align: center;
   font-size: 8vw;
+}
+#main .startshop p {
+  font-size: 5vw;
+  text-align: center;
 }
 #main .horizontal-scroll {
   display: flex;
@@ -655,18 +658,83 @@ footer {
   margin-top: auto;
   margin-left: auto;
   max-width: 60vw;
-  max-height: 60vh;
+  max-height: 100vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
 #main .horizontal-panel.a {
-  background-color: aliceblue;
+  background-image: url(/images/main/back.jpg);
+}
+#main .horizontal-panel.a img {
+  position: absolute;
+  left: 37%;
+  top: 13%;
+  width: 25%;
+}
+#main .horizontal-panel.a h1 {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  font-size: 4vw;
+  z-index: 1;
+  text-align: center;
+}
+#main .horizontal-panel.a .uptape img {
+  display: block;
+  width: 10%;
+  left: 32%;
+  transform: rotate(321deg);
+  z-index: 1;
+}
+#main .horizontal-panel.a .downtape img {
+  display: block;
+  width: 10%;
+  top: 87%;
+  left: 56%;
+  transform: rotate(327deg);
 }
 #main .horizontal-panel.b {
-  background-color: aquamarine;
+  background: url(/images/main/istockphoto-1215719000-612x612.jpg) no-repeat 0 0/cover;
+}
+#main .horizontal-panel.b img {
+  position: absolute;
+  left: 40%;
+  top: 13%;
+  width: 25%;
+}
+#main .horizontal-panel.b h1 {
+  position: absolute;
+  top: 5.4%;
+  left: 33%;
+  font-size: 4vw;
+  z-index: 1;
+  line-height: 1;
+}
+#main .horizontal-panel.b .uptape img {
+  display: block;
+  width: 10%;
+  left: 46%;
+  top: 10%;
+  transform: rotate(80deg);
+  z-index: 1;
 }
 #main .horizontal-panel.c {
-  background-color: antiquewhite;
+  background-color: #6a8a9f;
+}
+#main .horizontal-panel.c img {
+  position: absolute;
+  left: 40%;
+  top: 13%;
+  width: 25%;
+}
+#main .horizontal-panel.c h1 {
+  position: absolute;
+  top: 5.4%;
+  left: 59.2%;
+  font-size: 4vw;
+  z-index: 1;
+  line-height: 1;
+  text-align: end;
 }
 #main .horizontal-panel.d {
   background-color: thistle;

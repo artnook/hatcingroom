@@ -15,7 +15,6 @@ h2 {
 img {
   width: 100%;
   height: auto;
-  background: #f0f0f0;
 }
 
 ul {
@@ -248,10 +247,14 @@ footer {
     }
   }
   .startshop {
-    background: linear-gradient(-180deg, #000 50%, #fff 100%);
+    background: linear-gradient(-180deg, #000 3%, #ebecee 43%);
     h1 {
       text-align: center;
       font-size: 8vw;
+    }
+    p {
+      font-size: 5vw;
+      text-align: center;
     }
   }
 
@@ -274,20 +277,93 @@ footer {
       margin-top: auto;
       margin-left: auto;
       max-width: 60vw;
-      max-height: 60vh;
+      max-height: 100vh;
       object-fit: contain;
     }
 
     &.a {
-      background-color: aliceblue;
+      // background-color: #ebecee;
+      background-image: url(/images/main/back.jpg);
+      img {
+        position: absolute;
+        left: 37%;
+        top: 13%;
+        width: 25%;
+      }
+      h1 {
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        font-size: 4vw;
+        z-index: 1;
+        text-align: center;
+      }
+      .uptape {
+        img {
+          display: block;
+          width: 10%;
+          left: 32%;
+          transform: rotate(321deg);
+          z-index: 1;
+        }
+      }
+      .downtape {
+        img {
+          display: block;
+          width: 10%;
+          top: 87%;
+          left: 56%;
+          transform: rotate(327deg);
+        }
+      }
     }
-
     &.b {
-      background-color: aquamarine;
+      // background-color: #cccfd4;
+      background: url(/images/main/istockphoto-1215719000-612x612.jpg) no-repeat
+        0 0 / cover;
+      img {
+        position: absolute;
+        left: 40%;
+        top: 13%;
+        width: 25%;
+      }
+      h1 {
+        position: absolute;
+        top: 5.4%;
+        left: 33%;
+        font-size: 4vw;
+        z-index: 1;
+        line-height: 1;
+      }
+      .uptape {
+        img {
+          display: block;
+          width: 10%;
+          left: 46%;
+          top: 10%;
+          transform: rotate(80deg);
+          z-index: 1;
+        }
+      }
     }
 
     &.c {
-      background-color: antiquewhite;
+      background-color: #6a8a9f;
+      img {
+        position: absolute;
+        left: 40%;
+        top: 13%;
+        width: 25%;
+      }
+      h1 {
+        position: absolute;
+        top: 5.4%;
+        left: 59.2%;
+        font-size: 4vw;
+        z-index: 1;
+        line-height: 1;
+        text-align: end;
+      }
     }
 
     &.d {
