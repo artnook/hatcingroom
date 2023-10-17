@@ -264,7 +264,6 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
   }
-
   .horizontal-panel {
     display: flex;
     flex-direction: column;
@@ -282,8 +281,7 @@ footer {
     }
 
     &.a {
-      // background-color: #ebecee;
-      background-image: url(/images/main/back.jpg);
+      background-color: #ebecee;
       img {
         position: absolute;
         left: 37%;
@@ -318,9 +316,7 @@ footer {
       }
     }
     &.b {
-      // background-color: #cccfd4;
-      background: url(/images/main/istockphoto-1215719000-612x612.jpg) no-repeat
-        0 0 / cover;
+      background-color: #cccfd4;
       img {
         position: absolute;
         left: 40%;
@@ -364,10 +360,81 @@ footer {
         line-height: 1;
         text-align: end;
       }
+      .uptape {
+        img {
+          display: block;
+          width: 10%;
+          left: 35%;
+          top: 12%;
+          transform: rotate(323deg);
+          z-index: 1;
+        }
+      }
+      .downtape {
+        img {
+          display: block;
+          width: 10%;
+          top: 87%;
+          left: 59%;
+          transform: rotate(327deg);
+        }
+      }
     }
-
     &.d {
-      background-color: thistle;
+      background-color: #000;
+      img {
+        position: absolute;
+        left: 39%;
+        top: 10%;
+        width: 25%;
+      }
+      h1 {
+        position: absolute;
+        top: 3.2%;
+        left: 30.6%;
+        font-size: 4vw;
+        z-index: 1;
+        line-height: 1;
+        color: #d8d8d8;
+      }
+      .uptape {
+        img {
+          display: block;
+          width: 10%;
+          left: 59%;
+          top: 10%;
+          transform: rotate(46deg);
+          z-index: 1;
+        }
+      }
+      .downtape {
+        img {
+          display: block;
+          width: 10%;
+          top: 83%;
+          left: 35%;
+          transform: rotate(39deg);
+        }
+      }
     }
+  }
+}
+footer {
+  background-color: #000;
+  .txt-end {
+    font-size: 100px;
+    letter-spacing: 3px;
+    color: #d8d8d8;
+    a {
+      &:hover {
+        color: #73c2fb;
+        transition: color 0.5s ease;
+      }
+    }
+  }
+  .copy {
+    padding: 25px 0;
+    font-size: 14px;
+    color: #d8d8d8;
   }
 }

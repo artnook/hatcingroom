@@ -663,7 +663,7 @@ footer {
      object-fit: contain;
 }
 #main .horizontal-panel.a {
-  background-image: url(/images/main/back.jpg);
+  background-color: #ebecee;
 }
 #main .horizontal-panel.a img {
   position: absolute;
@@ -694,7 +694,7 @@ footer {
   transform: rotate(327deg);
 }
 #main .horizontal-panel.b {
-  background: url(/images/main/istockphoto-1215719000-612x612.jpg) no-repeat 0 0/cover;
+  background-color: #cccfd4;
 }
 #main .horizontal-panel.b img {
   position: absolute;
@@ -736,6 +736,69 @@ footer {
   line-height: 1;
   text-align: end;
 }
+#main .horizontal-panel.c .uptape img {
+  display: block;
+  width: 10%;
+  left: 35%;
+  top: 12%;
+  transform: rotate(323deg);
+  z-index: 1;
+}
+#main .horizontal-panel.c .downtape img {
+  display: block;
+  width: 10%;
+  top: 87%;
+  left: 59%;
+  transform: rotate(327deg);
+}
 #main .horizontal-panel.d {
-  background-color: thistle;
+  background-color: #000;
+}
+#main .horizontal-panel.d img {
+  position: absolute;
+  left: 39%;
+  top: 10%;
+  width: 25%;
+}
+#main .horizontal-panel.d h1 {
+  position: absolute;
+  top: 3.2%;
+  left: 30.6%;
+  font-size: 4vw;
+  z-index: 1;
+  line-height: 1;
+  color: #d8d8d8;
+}
+#main .horizontal-panel.d .uptape img {
+  display: block;
+  width: 10%;
+  left: 59%;
+  top: 10%;
+  transform: rotate(46deg);
+  z-index: 1;
+}
+#main .horizontal-panel.d .downtape img {
+  display: block;
+  width: 10%;
+  top: 83%;
+  left: 35%;
+  transform: rotate(39deg);
+}
+
+footer {
+  background-color: #000;
+}
+footer .txt-end {
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: #d8d8d8;
+}
+footer .txt-end a:hover {
+  color: #73c2fb;
+  transition: color 0.5s ease;
+}
+footer .copy {
+  padding: 25px 0;
+  font-size: 14px;
+  color: #d8d8d8;
 }/*# sourceMappingURL=comm.css.map */
